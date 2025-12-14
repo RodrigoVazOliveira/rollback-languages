@@ -39,8 +39,7 @@ int main(int argc, char* argv[]) {
         curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &http_code);
         std::cout << "código de resposta HTTP: " << http_code << std::endl;
         std::cout << "Resposta: " << response_buffer << std::endl;
-    }
-    
+    }    
     curl_global_cleanup();
     
     return 0;
